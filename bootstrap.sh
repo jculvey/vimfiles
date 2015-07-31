@@ -11,8 +11,8 @@ git clone https://github.com/jeetsukumaran/vim-buffergator.git
 git clone https://github.com/bronson/vim-trailing-whitespace.git
 
 # Grab the color scheme
-mkdir ~/.vim/colors
-cd !$
+mkdir -p ~/.vim/colors
+cd ~/.vim/colors
 curl https://raw.githubusercontent.com/chriskempson/tomorrow-theme/master/vim/colors/Tomorrow-Night-Eighties.vim > Tomorrow-Night-Eighties.vim
 
 # Fetch the .vimrc
