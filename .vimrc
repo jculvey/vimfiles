@@ -20,8 +20,8 @@ filetype indent on
 " turn syntax detection on
 syntax on
 
-"tell the term has 256 colors
-" set t_Co=256
+" Make , the leader key
+let mapleader=","
 
 " Settings for syntastic
 let g:syntastic_cpp_compiler = 'clang++'
