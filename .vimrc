@@ -34,3 +34,7 @@ let g:syntastic_auto_loc_list=2
 map <leader>n :NERDTreeToggle<CR>
 
 colorscheme Tomorrow-Night-Eighties
+
+" Set case insensitivity when doing incremental search
+set ignorecase
+set smartcase
