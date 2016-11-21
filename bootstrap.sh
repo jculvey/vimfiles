@@ -10,6 +10,7 @@ git clone https://github.com/scrooloose/syntastic.git
 git clone https://github.com/jeetsukumaran/vim-buffergator.git
 git clone https://github.com/bronson/vim-trailing-whitespace.git
 git clone https://github.com/mxw/vim-jsx.git
+git clone https://github.com/ctrlpvim/ctrlp.vim.git
 
 # Grab the color scheme
 mkdir -p ~/.vim/colors

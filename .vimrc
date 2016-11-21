@@ -64,17 +64,28 @@ execute pathogen#infect()
 
 "" Settings for syntastic
 let g:syntastic_enable_signs=1
-let g:syntastic_quiet_messages = {'level': 'warnings'}
-let g:syntastic_cpp_compiler = 'clang++'
-let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
-let g:syntastic_python_checkers = ['flake8']
-"let g:syntastic_auto_loc_list=1
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 2
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+let g:syntastic_javascript_checkers = ['eslint']
+"let g:syntastic_debug = 3
 
-let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [], 'passive_filetypes': [] }
-nnoremap <silent> <leader>s :SyntasticCheck<CR>
+function! StrTrim(txt)
+  return substitute(a:txt, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
+endfunction
+
+let b:syntastic_javascript_eslint_exec = StrTrim(system('npm-which eslint'))
+
+"let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [], 'passive_filetypes': [] }
+"nnoremap <silent> <leader>s :SyntasticCheck<CR>
 
 "" Settings for NERDTree
 map <leader>n :NERDTreeToggle<CR>
+
+"" Settings for CtrlP
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
 "" Disable annoying autocomplete plugin
 let g:omni_sql_no_default_maps = 1
