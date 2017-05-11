@@ -11,6 +11,7 @@ git clone https://github.com/jeetsukumaran/vim-buffergator.git
 git clone https://github.com/bronson/vim-trailing-whitespace.git
 git clone https://github.com/mxw/vim-jsx.git
 git clone https://github.com/ctrlpvim/ctrlp.vim.git
+git clone git://github.com/tpope/vim-surround.git
 
 # Grab the color scheme
 mkdir -p ~/.vim/colors
